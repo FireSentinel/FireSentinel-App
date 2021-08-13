@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View, TextInput, TouchableOpacity, Alert, ImageBackground } from 'react-native';
+import { Text, View, TextInput, TouchableOpacity, Alert, ImageBackground, Image } from 'react-native';
 import estiloLogin from './estiloLogin';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -28,16 +28,16 @@ function Login({ navigation }) {
     return (
         <View style={estiloLogin.container}>
             
-            <ImageBackground source={require('../../../assets/imagens/fundo_login.png')} style={estiloLogin.fundo}>
-                
-                <View style={estiloLogin.logoContainer}>
-                    <LinearGradient colors={['#4c669f', '#3b5998', '#081a31']} style={estiloLogin.logo}>
-                        <AntDesign name="rest" size={40} color="white" />
-                    </LinearGradient>
-                </View>
+            
+
+            <ImageBackground source={require('../../../assets/imagens/fundo.jpg')} style={estiloLogin.fundo}>
+                             
+            <View style={estiloLogin.fotoContainer}>
+                <Image style={estiloLogin.foto} source={require('../../../assets/imagens/FireSentinel3.png')} />
+            </View>
                 
                 <View style={estiloLogin.campoContainer}>
-                    <MaterialCommunityIcons name="account" size={24} color="white" />
+                    <MaterialCommunityIcons name="account" size={24} color="black" />
                     <TextInput
                         style={estiloLogin.campo}
                         placeholder="Login"
@@ -47,7 +47,7 @@ function Login({ navigation }) {
                 </View>
                 
                 <View style={estiloLogin.campoContainer}>
-                    <MaterialCommunityIcons name="key" size={24} color="white" />
+                    <MaterialCommunityIcons name="key" size={24} color="black" />
                     <TextInput
                         style={estiloLogin.campo}
                         placeholder="Senha"

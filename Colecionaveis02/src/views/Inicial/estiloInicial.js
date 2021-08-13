@@ -32,10 +32,12 @@ const estiloInicial = StyleSheet.create({
        borderColor: '#14417b',
        marginTop: 250,
    },
-   botaoTexto: {
+   Texto: {
       fontSize: 18,
       color: '#FFFFFF',
-      fontWeight: 'bold'
+      fontWeight: 'bold',
+      textAlign: 'center',
+
    },
 });
 

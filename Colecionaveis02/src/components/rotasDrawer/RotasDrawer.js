@@ -1,9 +1,8 @@
 import React from "react";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Inicial from '../../views/Inicial/Inicial';
-import Colecao from '../../views/Colecao/Colecao';
-import Item from '../../views/Item/Item';
 import Perfil from '../../views/Perfil/Perfil';
+import Sobre from '../../views/Sobre/Sobre';
 import { MaterialIcons } from '@expo/vector-icons';
 import DrawerPersonalizado from './DrawerPersonalizado';
 
@@ -23,24 +22,7 @@ const RotasDrawer = () => {
             )
         }}
     />
-      <Drawer.Screen 
-        name="Colecao" 
-        component={Colecao}
-        options={{
-            drawerIcon: ({color, size}) => (
-                <MaterialIcons name="storage" size={size} color={color} />
-            )
-        }}
-    />
-      <Drawer.Screen 
-        name="Item" 
-        component={Item}
-        options={{
-            drawerIcon: ({color, size}) => (
-                <MaterialIcons name="done-all" size={size} color={color} />
-            )
-        }}
-    />
+
       <Drawer.Screen 
         name="Perfil" 
         component={Perfil}
@@ -50,6 +32,16 @@ const RotasDrawer = () => {
             )
         }}
     />
+
+      <Drawer.Screen 
+        name="Sobre" 
+        component={Sobre}
+        options={{
+            drawerIcon: ({color, size}) => (
+                <MaterialIcons name="info" size={size} color={color} />
+            )
+        }}
+      />
     </Drawer.Navigator>
   );
 }

@@ -3,11 +3,13 @@ import { StyleSheet } from 'react-native';
 const estiloLogin = StyleSheet.create({
    container: {   
       flex: 1, 
+     
    },
    fundo: {
        justifyContent: 'center',
        width: '100%',
        height: '100%',
+       
    },
    borda: {   
       justifyContent: 'center',
@@ -15,25 +17,7 @@ const estiloLogin = StyleSheet.create({
       width: '100%',
       height: '100%',
    },
-   logoContainer: {
-       alignItems: 'center',
-       marginBottom: 20,
-   },
-   logo: {
-       width: 90,
-       height: 90,
-       borderRadius: 50,
-       justifyContent: 'center',
-       alignItems: 'center',
-       padding: 20,
-   },
-   texto: {
-      fontSize: 20,
-      color: '#FFFFFF',
-      fontWeight: 'bold',
-      textAlign: "center",
-      padding: 10
-   },
+  
    campoContainer: {
        flexDirection: 'row',
        padding: 10,
@@ -42,21 +26,22 @@ const estiloLogin = StyleSheet.create({
        margin: 10,
        borderRadius: 5,
        alignItems: 'center',
+       color: 'black'
    },
    campo: {
       fontSize: 18,
-      color: '#FFFFFF',
-      marginLeft: 15,
+      color: 'black',
+      marginLeft: 12,
       paddingBottom: 10,   
       borderBottomWidth: 1,
-      borderColor: 'white',
+      borderColor: 'black',
     },
    botaoContainer: {
       marginTop: 20,
       marginBottom: 20,
       marginLeft: 40,
       marginRight: 40,
-      borderRadius: 5,
+      borderRadius: 20,
       height: 40,
       borderWidth: 2,
       borderColor: '#e8f2e9',
@@ -82,6 +67,13 @@ const estiloLogin = StyleSheet.create({
       paddingLeft: 15,
       backgroundColor: 'transparent',
    },
+   fotoContainer: {
+      alignItems: 'center',
+  },
+  foto: {
+      width: 300,
+      height: 150,
+  },
 });
 
   export default estiloLogin;

@@ -13,14 +13,8 @@ function Inicial({ navigation }) {
             navigation.openDrawer();
         }
     }
-
-    const abrirColecao = () => {
-        navigation.navigate('Colecao')
-    }
-    
-    const abrirItem = () => {
-        navigation.navigate('Item')
-    }
+ 
+   
     
     return (
         <View style={estiloInicial.container}>
@@ -31,19 +25,9 @@ function Inicial({ navigation }) {
                 </TouchableOpacity>
             </View>
             
-            <ImageBackground source={require('../../../assets/imagens/inicio.png')} style={estiloInicial.fundo}>
+            <ImageBackground source={require('../../../assets/imagens/fundo2.jpg')} style={estiloInicial.fundo}>
 
-                <TouchableOpacity onPress={abrirColecao}>
-                    <ImageBackground source={require('../../../assets/imagens/colecao.png')} style={estiloInicial.botaoBackground}>
-                        <Text style={estiloInicial.botaoTexto}>Coleção</Text>
-                    </ImageBackground>
-                </TouchableOpacity>
-
-                <TouchableOpacity onPress={abrirItem}>
-                    <ImageBackground source={require('../../../assets/imagens/item.png')} style={estiloInicial.botaoBackground}>
-                        <Text style={estiloInicial.botaoTexto}>Item</Text>
-                    </ImageBackground>
-                </TouchableOpacity>
+            <Text style={estiloInicial.Texto}>Bem vindo ao FireSentinel!         Somos Danilo, Gabriel e Keisy</Text>
 
             </ImageBackground>
 

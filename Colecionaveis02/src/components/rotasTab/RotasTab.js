@@ -1,7 +1,7 @@
 import React from "react";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Colecao from '../../views/Colecao/Colecao';
 import Perfil from '../../views/Perfil/Perfil';
+import Sobre from '../../views/Sobre/Sobre';
 import { MaterialIcons } from '@expo/vector-icons';
 import RotasDrawer from '../rotasDrawer/RotasDrawer';
 
@@ -9,8 +9,8 @@ const Tab = createBottomTabNavigator();
 
 const icones = {
     Inicial: { name: 'home' },
-    Colecao: { name: 'storage' },
     Perfil: { name: 'person' },
+    Sobre: { name: 'info' },
 }
 
 const RotasTab = () => {
@@ -18,8 +18,11 @@ const RotasTab = () => {
     <Tab.Navigator 
       tabBarOptions={
         {
-            style: {backgroundColor: '#081a31', borderTopColor: '#081a31'},
+            style: {backgroundColor: '#081a31', 
+            borderTopColor: '#081a31'},
             activeTintColor: '#FFFFFF',
+            width: '100%',
+            height: '50%',
             showLabel: false,
         }
       }
@@ -38,8 +41,8 @@ const RotasTab = () => {
             unmountOnBlur: true,
         }} 
       />
-      <Tab.Screen name="Colecao" component={Colecao} />
       <Tab.Screen name="Perfil" component={Perfil} />
+      <Tab.Screen name="Sobre" component={Sobre} />
     </Tab.Navigator>
   );
 }
