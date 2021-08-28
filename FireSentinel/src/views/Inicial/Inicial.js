@@ -17,17 +17,23 @@ function Inicial({ navigation }) {
    
     
     return (
-        <View style={estiloInicial.container}>
 
+       
+        
+        <View style={estiloInicial.container}>
+                                    
+           
+                
             <View style={estiloInicial.header}>
                 <TouchableOpacity onPress={exibirDrawer}>
                     <AntDesign name="menu-fold" size={18} color="white" />
                 </TouchableOpacity>
             </View>
+          
             
-            <ImageBackground source={require('../../../assets/imagens/fundo2.jpg')} style={estiloInicial.fundo}>
+            <ImageBackground source={require('../../../assets/imagens/fundo.jpg')} style={estiloInicial.fundo}>
 
-            <Text style={estiloInicial.Texto}>Bem vindo ao FireSentinel!         Somos Danilo, Gabriel e Keisy</Text>
+            <Text style={estiloInicial.Texto}>Bem vindo ao FireSentinel! <br/> Um software de vigilância 24h</Text>
 
             </ImageBackground>
 

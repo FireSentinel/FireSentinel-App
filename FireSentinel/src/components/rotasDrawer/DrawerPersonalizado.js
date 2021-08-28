@@ -8,7 +8,7 @@ function DrawerPersonalizado(props) {
         <DrawerContentScrollView {...props}>
 
             <View style={estiloRotasDrawer.fotoContainer}>
-                <Image style={estiloRotasDrawer.foto} source={require('../../../assets/imagens/FireSentinel2.png')} />
+                <Image style={estiloRotasDrawer.foto} source={require('../../../assets/imagens/FireSentinel3.png')} />
                 <Text style={estiloRotasDrawer.nome}>FireSentinel</Text>
             </View>
 

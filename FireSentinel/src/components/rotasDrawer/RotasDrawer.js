@@ -42,6 +42,36 @@ const RotasDrawer = () => {
             )
         }}
       />
+
+      <Drawer.Screen
+        name="Mapa" 
+        component={Inicial}
+        options={{
+            drawerIcon: ({color, size}) => (
+                <MaterialIcons name="map" size={size} color={color} />
+            )
+        }}
+    />
+
+      <Drawer.Screen
+        name="Meu Alarme" 
+        component={Inicial}
+        options={{
+            drawerIcon: ({color, size}) => (
+                <MaterialIcons name="alarm" size={size} color={color} />
+            )
+        }}
+    />
+
+      <Drawer.Screen
+        name="Denúnciar" 
+        component={Inicial}
+        options={{
+            drawerIcon: ({color, size}) => (
+                <MaterialIcons name="fire-extinguisher" size={size} color={color} />
+            )
+        }}
+    />
     </Drawer.Navigator>
   );
 }

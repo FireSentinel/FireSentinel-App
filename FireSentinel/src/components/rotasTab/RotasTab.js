@@ -2,6 +2,9 @@ import React from "react";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Perfil from '../../views/Perfil/Perfil';
 import Sobre from '../../views/Sobre/Sobre';
+import Mapa from '../../views/Mapa/Mapa';
+import Alarme from '../../views/Alarme/Alarme';
+import Denunciar from '../../views/Denunciar/Denunciar';
 import { MaterialIcons } from '@expo/vector-icons';
 import RotasDrawer from '../rotasDrawer/RotasDrawer';
 

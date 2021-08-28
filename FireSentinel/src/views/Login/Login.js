@@ -28,15 +28,15 @@ function Login({ navigation }) {
     return (
         <View style={estiloLogin.container}>
             
-            
 
             <ImageBackground source={require('../../../assets/imagens/fundo.jpg')} style={estiloLogin.fundo}>
                              
             <View style={estiloLogin.fotoContainer}>
                 <Image style={estiloLogin.foto} source={require('../../../assets/imagens/FireSentinel3.png')} />
             </View>
-                
+               
                 <View style={estiloLogin.campoContainer}>
+               
                     <MaterialCommunityIcons name="account" size={24} color="black" />
                     <TextInput
                         style={estiloLogin.campo}
@@ -44,6 +44,7 @@ function Login({ navigation }) {
                         onChangeText={login => setLogin(login)}
                         value={login}
                     />
+                    
                 </View>
                 
                 <View style={estiloLogin.campoContainer}>
@@ -64,6 +65,7 @@ function Login({ navigation }) {
                 </TouchableOpacity>
 
             </ImageBackground>
+          
 
         </View>
     )

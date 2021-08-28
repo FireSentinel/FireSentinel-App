@@ -2,16 +2,16 @@ import { StyleSheet } from 'react-native';
 
 const estiloRotasStack = StyleSheet.create({
    screenLogin: {
-      backgroundColor: '#000000'
+      backgroundColor: '#f5f5f5'
     },
     screenInicial: {
-      backgroundColor: '#92afd7'
+      backgroundColor: '#f5f5f5'
     },
     screenColecao: {
-      backgroundColor: '#d0f4ea'
+      backgroundColor: '#f5f5f5'
     },
     screenItem: {
-      backgroundColor: '#d1d1d1'  
+      backgroundColor: '#f5f5f5'  
     }
 });
 

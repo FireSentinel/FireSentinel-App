@@ -33,12 +33,20 @@ const estiloInicial = StyleSheet.create({
        marginTop: 250,
    },
    Texto: {
-      fontSize: 18,
-      color: '#FFFFFF',
+    fontFamily: 'Arial',
+      fontSize: 28,
+      color: '#081a31',
       fontWeight: 'bold',
       textAlign: 'center',
 
    },
+   fotoContainer: {
+    alignItems: 'center',
+   },
+   foto: {
+    width: 300,
+    height: 150,
+},
 });
 
   export default estiloInicial;
