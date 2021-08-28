@@ -13,12 +13,8 @@ function Inicial({ navigation }) {
             navigation.openDrawer();
         }
     }
- 
-   
     
     return (
-
-       
         
         <View style={estiloInicial.container}>
                                     
