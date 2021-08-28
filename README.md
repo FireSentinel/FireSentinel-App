@@ -1,5 +1,5 @@
-# Site-FireSentinel
-Site do app FireSentinel
+# App-FireSentinel
+App FireSentinel
 
 O FireSentinel é um Software de vigilância 24 horas que visa detectar focos de incêndio
 antes que cresçam pelo resto do terreno, prédio ou casa, minimizando os danos à estrutura
