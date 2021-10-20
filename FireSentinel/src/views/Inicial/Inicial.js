@@ -17,12 +17,10 @@ function Inicial({ navigation }) {
     return (
         
         <View style={estiloInicial.container}>
-                                    
-           
-                
+                                                   
             <View style={estiloInicial.header}>
                 <TouchableOpacity onPress={exibirDrawer}>
-                    <AntDesign name="menu-fold" size={18} color="white" />
+                    <AntDesign name="bars" size={35} color="white" />
                 </TouchableOpacity>
             </View>
           

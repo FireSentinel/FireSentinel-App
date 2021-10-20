@@ -7,7 +7,7 @@ const estiloInicial = StyleSheet.create({
       alignItems: 'center',     
    },
    header: {
-       height: 40,
+       height: 70,
        width: '100%',
        backgroundColor: '#081a31',
        flexDirection: 'row',
